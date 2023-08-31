@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Event Calendar</title>
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <button id="prevMonth">&lt;</button>
+            <h1 id="currentMonth">August 2023</h1>
+            <button id="nextMonth">&gt;</button>
+        </div>
+        <div class="days">
+            <div class="day">Sun</div>
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+        </div>
+        <div class="calendar-grid" id="calendarGrid">
+            <!-- Calendar cells will be added dynamically here -->
+        </div>
+    </div>
+
+    <div class="event-form" id="eventForm">
+        <h2>Add Event</h2>
+        <input type="text" id="eventTitle" placeholder="Event Title">
+        <input type="text" id="eventLocation" placeholder="Location">
+        <textarea id="eventDescription" placeholder="Description"></textarea>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate">
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate">
+        <button id="addEventButton">Add Event</button>
+    </div>
+</body>
+</html>
